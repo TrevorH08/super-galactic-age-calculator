@@ -1,4 +1,4 @@
-import { EarthAge } from './../src/js/EarthAge.js'
+import { EarthAge, roundTwoDecimal } from './../src/js/EarthAge.js'
 
 describe ('EarthAge', () => {
   
@@ -10,5 +10,12 @@ describe ('EarthAge', () => {
   test("Will display users age in Mercury Years", () => {
     const userAge = new EarthAge(22);
     expect(userAge.MercuryAge).toEqual(5.28);
+  })
+})
+
+describe ('roudnTwoDecimal', () => {
+
+  test("should round inputted number to the nearest second decimal", () => {
+    expect(roundTwoDecimal(1.77777)).toEqual(1.78)
   })
 })
