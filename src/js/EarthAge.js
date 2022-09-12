@@ -9,4 +9,5 @@ export function EarthAge(ageInput, expectancyInput) {
   this.JupiterAge = roundTwoDecimal(ageInput * 11.86);
   this.MercuryYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 0.24);
   this.VenusYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 0.62);
+  this.MarsYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 1.88);
 }
