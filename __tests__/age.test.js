@@ -11,7 +11,13 @@ describe ('EarthAge', () => {
     const userAge = new EarthAge(22);
     expect(userAge.MercuryAge).toEqual(5.28);
   })
+
+  test("will display the users age in Venus Years", () => {
+    const userAge = new EarthAge(22);
+    expect(userAge.VenusAge).toEqual(13.64);
+  })
 })
+
 
 describe ('roudnTwoDecimal', () => {
 
