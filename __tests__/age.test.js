@@ -32,7 +32,7 @@ describe ('EarthAge', () => {
     expect(userAge.MercuryYearsLeft).toEqual(13.66);
   })
 
-  test("will display how many years lef the user has on Venus", () => {
+  test("will display how many years left the user has on Venus", () => {
     const userAge = new EarthAge(22, 78.9);
     expect(userAge.VenusYearsLeft).toEqual(35.28);
   })
@@ -50,6 +50,9 @@ describe ('EarthAge', () => {
   test("if result of ageInput is greater than expectancyInput, it will convert negative output to positive", () => {
     const userAge = new EarthAge(80, 78.9);
     expect(userAge.MercuryYearsLeft).toEqual(0.26)
+    expect(userAge.VenusYearsLeft).toEqual(0.68)
+    expect(userAge.MarsYearsLeft).toEqual(2.07)
+    expect(userAge.JupiterYearsLeft).toEqual(13.05)
   })
 })
 
