@@ -9,17 +9,12 @@ export class EarthAge {
     this.VenusAge = roundTwoDecimal(ageInput * 0.62);
     this.MarsAge = roundTwoDecimal(ageInput * 1.88);
     this.JupiterAge = roundTwoDecimal(ageInput * 11.86);
-    this.MercuryYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 0.24);
+    this.MercuryYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 0.24)
+    if (ageInput > expectancyInput) {
+      this.MercuryYearsLeft = roundTwoDecimal((ageInput - expectancyInput) * 0.24);
+    }
     this.VenusYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 0.62);
     this.MarsYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 1.88);
     this.JupiterYearsLeft = roundTwoDecimal((expectancyInput - ageInput) * 11.86);
-  }
-  EarthAge.prototype.Left = function {
-    if (ageInput > expectancyInput) {
-      this.MercuryYearsLeft = roundTwoDecimal((ageInput - expectancyInput) * 0.24);
-      this.VenusYearsLeft = roundTwoDecimal((ageInput - expectancyInput) * 0.62);
-      this.MarsYearsLeft = roundTwoDecimal((ageInput - expectancyInput) * 1.88);
-      this.JupiterYearsLeft = roundTwoDecimal((ageInput - expectancyInput) * 11.86);
-    } 
   }
 }
