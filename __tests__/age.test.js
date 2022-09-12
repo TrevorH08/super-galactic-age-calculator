@@ -6,4 +6,9 @@ describe ('EarthAge', () => {
     const userAge = new EarthAge(22);
     expect(userAge.Age).toEqual(22);
   });
+
+  test("Will display users age in Mercury Years", () => {
+    const userAge = new EarthAge(22);
+    expect(userAge.MercuryAge).toEqual(5.28);
+  })
 })
