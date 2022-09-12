@@ -17,9 +17,9 @@
 ## Setup/Installation Requirements
 
 * _Clone from GitHub at:https://github.com/TrevorH08/super-galactic-age-calculator ._
-* _Navigate to the "super-galactic-age-calculator" folder_
-* _Double click index.html to open a locally hosted instance_
-* _Enter a number to see how it works_
+* _Navigate to folder in bash, and use "code ." to open project with VSCode or Text editor of your choice_
+* _Once open, type "npm install" into bash to install all required Webpack assets_
+* _Open index.html into your browser_
 * _TO EDIT: Open folder using text editor of your choice_
 
 ## Known Bugs
