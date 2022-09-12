@@ -1,3 +1,5 @@
+import { EarthAge } from './../src/js/EarthAge.js'
+
 describe ('EarthAge', () => {
   
   test("display the users Age on Earth as 22", () => {
