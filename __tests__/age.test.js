@@ -46,6 +46,10 @@ describe ('EarthAge', () => {
     const userAge = new EarthAge(22, 78.9);
     expect(userAge.JupiterYearsLeft).toEqual(674.83);
   })
+
+  test("if result of ageInput is greater than expectancyInput, it will convert negative output to positive")
+  const userAge = new EarthAge(80, 78.9);
+  expect(userAge.MarsAge).toEqual(0.26)
 })
 
 
