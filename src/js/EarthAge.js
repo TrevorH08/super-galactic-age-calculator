@@ -1,3 +1,3 @@
-export function EarthAge() {
-
+export function EarthAge(ageInput) {
+  this.Age = ageInput
 }
