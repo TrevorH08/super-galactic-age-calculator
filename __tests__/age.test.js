@@ -16,6 +16,12 @@ describe ('EarthAge', () => {
     const userAge = new EarthAge(22);
     expect(userAge.VenusAge).toEqual(13.64);
   })
+
+  test("will display the users age in Mars Years", () => {
+    const userAge = new EarthAge(22);
+    expect(userAge.MarsAge).toEqual(41.36);
+  })
+  
 })
 
 
